@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cipher Tool</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <div class="top"></div>
+  </header>
+
+  <div class="container">
+    <div id="app-container">
+
+      <textarea id="text" placeholder="Enter your text here"></textarea>
+
+      <div id="input-tools">
+        <button id="voice-input">Voice Input</button>
+        <label for="image-input" class="custom-file-upload">Upload Image</label>
+        <input type="file" id="image-input" accept="image/*">
+      </div>
+
+      <div id="key-container">
+        <input type="number" id="key" placeholder="Enter key">
+      </div>
+
+   <textarea id="output" placeholder="Your encrypted/decrypted text will appear here" readonly></textarea>
+
+      <div id="buttons-container">
+        <button id="encrypt">Encrypt in Cipher text</button>
+        <button id="decrypt">Decrypt in Cipher text</button>
+      </div>
+
+      <div id="buttons-container">
+        <button id="morse-encrypt">Encrypt in Morse</button>
+        <button id="morse-decrypt">Decrypt in Morse</button>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 CipherDots by Group 12</p>
+  </footer>
+<script src="vosk.js"></script>
+  <script src="tesseract.min.js"></script>
+   <script src="cp-dots.js"></script>
+</body>
+</html>
